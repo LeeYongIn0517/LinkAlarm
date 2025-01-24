@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.jaknaeso.linkalarm"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.jaknaeso.linkalarm"
