@@ -4,13 +4,13 @@
     <data>
         <variable
             name="viewModel"
-            type="com.jaknaeso.linkalarm.ui.home.HomeViewModel"
+            type="com.jaknaeso.linkalarm.ui.home.viewmodel.HomeViewModel"
         />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            tools:context=".ui.home.HomeFragment" android:padding="16.dp">
+            tools:context=".ui.home.view.HomeFragment" android:padding="16.dp">
 
         <TextView
                 android:text="+ 내 파일에서 음악 추가"

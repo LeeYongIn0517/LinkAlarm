@@ -1,4 +1,4 @@
-package com.jaknaeso.linkalarm.ui.home
+package com.jaknaeso.linkalarm.ui.home.view
 
 import androidx.fragment.app.viewModels
 import android.os.Bundle
@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.jaknaeso.linkalarm.R
+import com.jaknaeso.linkalarm.ui.home.viewmodel.FileEditorViewModel
 
 class FileEditorFragment : Fragment() {
 

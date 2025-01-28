@@ -1,4 +1,4 @@
-package com.jaknaeso.linkalarm.ui.home
+package com.jaknaeso.linkalarm.ui.home.viewmodel
 
 import androidx.lifecycle.ViewModel
 
