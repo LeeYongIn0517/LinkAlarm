@@ -1,6 +1,6 @@
 <resources>
     <style name="Widget.Theme.LinkAlarm.MyView" parent="">
         <item name="android:background">@color/gray_400</item>
-        <item name="exampleColor">@color/light_blue_400</item>
+        <item name="android:action">@color/light_blue_400</item>
     </style>
 </resources>
