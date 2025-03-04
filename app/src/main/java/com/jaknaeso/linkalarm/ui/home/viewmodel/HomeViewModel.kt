@@ -11,14 +11,8 @@ class HomeViewModel : ViewModel() {
     val audioFiles : LiveData<List<AudioFileModel>>
         get() = _audioFiles
 
-    private var files = mutableListOf<AudioFileModel>()
-    init {
-        files = arrayListOf(
-            AudioFileModel("O Holy Night","30.0KB","3:51"),
-            AudioFileModel("Santa Tell Me","20.1KB","3:43"),
-            AudioFileModel("Proud Corazon","16.0KB","2:45"),
-            AudioFileModel("You've got a friend in me","15.6KB","2:36")
-        )
-        _audioFiles.postValue(files)
+    fun addNewAudioFiles(item:AudioFileModel){
+        val updatedList = _audioFiles.value.orEmpty() + item //새로운 리스트 생성
+        _audioFiles.value = updatedList
     }
 }
