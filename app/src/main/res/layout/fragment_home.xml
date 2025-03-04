@@ -6,6 +6,10 @@
             name="viewModel"
             type="com.jaknaeso.linkalarm.ui.home.viewmodel.HomeViewModel"
         />
+        <variable
+                name="fragment"
+                type="com.jaknaeso.linkalarm.ui.home.view.HomeFragment"
+        />
     </data>
     <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -14,12 +18,14 @@
 
         <TextView
                 android:text="+ 내 파일에서 음악 추가"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content" android:id="@+id/textView"
                 android:textColor="@color/purple_500"
                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"/>
+                app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintVertical_bias="0.0"
+                app:layout_constraintHorizontal_bias="0.0"
+                android:onClick ="@{(v) -> fragment.addNewAudioFile(v)}" android:clickable="true"/>
         <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="0dp"
                 android:layout_height="0dp"
@@ -28,6 +34,8 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView" android:layout_marginTop="16dp"
                 android:id="@+id/recyclerView"
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                android:clipToPadding="false"
+                android:paddingBottom="56dp"
         />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
